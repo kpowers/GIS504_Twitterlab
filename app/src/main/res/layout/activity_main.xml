@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/latitude_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="@string/latitude_label"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/latitude_text"
+    android:layout_toStartOf="@+id/latitude_text" />
+
+
+<TextView
+    android:id="@+id/latitude_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="19dp"
+    android:textIsSelectable="true"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/longitude_label"
+    android:layout_toEndOf="@+id/longitude_label" />
+
+
+<TextView
+    android:id="@+id/longitude_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/longitude_label"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_toStartOf="@+id/tweetbutton"
+    android:layout_alignTop="@+id/longitude_text" />
+
+
+<TextView
+    android:id="@+id/longitude_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textIsSelectable="true"
+    android:layout_below="@+id/latitude_text"
+    android:layout_toRightOf="@+id/latitude_text"
+    android:layout_toEndOf="@+id/latitude_text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/displayamessage"
+        android:id="@+id/tweetbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp"
+        android:textColor="#ffffec0f"
+        android:background="#ff6d04ff"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="buttonOnClick" />
+
+
+</RelativeLayout>
